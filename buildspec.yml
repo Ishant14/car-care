@@ -6,7 +6,7 @@ phases:
   build:
     commands:
       - echo "Entered the pre build phase"
-      - mvn clean prepare-package
+      - mvn package
   post_build:
     commands:
       - echo "Entered the post buid phase"
