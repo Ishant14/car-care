@@ -1,18 +1,15 @@
 version: 0.2
 phases:
-  pre-build:
+  pre_build:
     commands:
     - echo "Entered the pre build phase"
   build:
     commands:
       - echo "Entered the pre build phase"
       - mvn clean prepare-package
-  post-builds:
+  post_builds:
     commands:
       - echo "Entered the post buid phase"
 artifacts:
   files:
     - target/**/*
-
-
-
